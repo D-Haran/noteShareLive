@@ -8,6 +8,9 @@ const Name = ({dataExport}) => {
 
     // const [description, setDescription] = useState("")
     let description;
+    return(
+        <div>404 Page :(</div>
+    )
 // Option 1
 // useEffect(() => {
 //   if (!router.isReady) return;
