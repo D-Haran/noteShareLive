@@ -20,5 +20,8 @@ export default function PDF() {
     }
 
   }, [])
+  return(
+    <></>
+  )
 }
  
