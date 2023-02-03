@@ -1,0 +1,88 @@
+.trendingContainer {
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.notSignedIn {
+    position: fixed;
+    width: 50%;
+    color: #000;
+    z-index: 9;
+    margin: 0 auto;
+    font-size: 1.5vh;
+    background: rgba( 255, 255, 255, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 0.5px solid rgba( 255, 255, 255, 0.18 );
+    border: 0.5vh solid #FC7753;
+    padding: 3vh;
+    left: 25%;
+    bottom: 3vh;
+    text-align: center;
+}
+
+.noPatronedLibraries {
+    height: 100%;
+    width: 80%;
+    color: #000;
+    margin: 0 auto;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 0.5vh solid #FC7753;
+    padding: 3vh;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.filteredLibrariesWrapper{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.filteredLibrariesInput {
+    background-color: #6D6767;
+    height: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    border-radius: 8%;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+}
+
+.filteredLibrariesInput::placeholder {
+    font-size: 1.6vh;
+    color: #fff;
+}
+
+.newLibrariesWrapper {
+    position: absolute;
+    left: 25%;
+    cursor: pointer;
+    padding: 1vw;
+    width: 50%;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 3vh;
+    border: 1vh solid #FC7753;
+    text-align: center;
+}
+.newLibrariesWrapper:hover {
+    text-decoration: underline;
+}
+
+.loginAndRegister {
+    cursor: pointer;
+    color: #FC7753;
+}
+.loginAndRegister:hover {
+    text-decoration: underline;
+}
