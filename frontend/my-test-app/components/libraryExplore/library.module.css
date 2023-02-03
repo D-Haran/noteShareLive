@@ -1,0 +1,115 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css";
+.libraryView {
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 12px );
+-webkit-backdrop-filter: blur( 12px );
+border-radius: 2vw;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+margin-top: 10vh;
+    height: 60vh;
+    width: 60vw;
+    overflow-y: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    padding-bottom: 91vh;
+    height: 100%;
+    width: 100%;
+}
+
+.libContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.arrowNextWrapper {
+    position: absolute;
+    padding: 1.6vh 1vw;
+    border-radius: 50%;
+    background-color: #6D6767;
+    right: 10%;
+    top: 13.6vh;
+    cursor: pointer;
+    z-index: 100;
+}
+.arrowBackWrapper {
+    position: absolute;
+    padding: 1.6vh 1vw;
+    border-radius: 50%;
+    background-color: #6D6767;
+    left: 10%;
+    top: 13.6vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrow {
+    transition: color 300ms;
+}
+.next {
+    right: 0%;
+    top: 50%
+}
+
+.libContainerTitle {
+    font-size: 3.5vh;
+    cursor: pointer;
+}
+.libContainerTitle:hover {
+    color: rgba(255, 157, 0, 0.98);
+}
+
+.prev {
+    left: 0%;
+    top: 50%;
+}
+
+.navigateBooks {
+    position: absolute;
+    right: 10vw;
+    display: grid;
+    margin-top: 50vh;
+    grid-gap: 50%;
+
+}
+.navigateBooksButton {
+    margin: auto;
+    padding: 0.5vh 0.7vh;
+    border-radius: 50%;
+    background: rgba( 0, 0, 0, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.booksContainer {
+    display: grid;
+    font-size: 1vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    /* align-self: center; */
+    /* justify-self: center; */
+    /* align-content: center; */
+}
+
+@media only screen and (max-width: 650px) {
+    .booksContainer {
+        overflow-y: scroll;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+@media only screen and (max-width: 450px) {
+    .booksContainer {
+        grid-template-columns: 1fr;
+    }
+  }

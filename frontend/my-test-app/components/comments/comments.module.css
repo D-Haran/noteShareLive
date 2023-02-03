@@ -1,0 +1,135 @@
+.container {
+    background: rgba( 252, 231, 231, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.commentsContainer {
+    color: #000;
+    display: grid;
+    height: 75vh;
+    width: 20vw;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 810px) {
+    .commentsContainer {
+        width: 100%;
+    }
+
+    .container {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 28px;
+    }
+}
+
+.commentSection {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    /* background-color: rgb(222, 30, 210); */
+    background: rgba( 255, 255, 255, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1vw;
+}
+
+@media screen and (min-width: 810px) {
+    .commentSection {
+        width: 18vw;   
+        height:fit-content;
+        
+    }
+    .comment {
+        width: max-content;
+        word-wrap: break-word;
+    }
+    .content {
+        width: 10vw;
+        word-wrap: break-word;
+    }
+
+}
+
+.profileAndUsername {
+    display: flex;
+    font-size: 2vh;
+}
+
+.commentsContainer::-webkit-scrollbar {
+    display: none;
+  }
+  .content {
+    margin-left: 2.5vw;
+  }
+
+.header {
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text {
+    /* margin-left: 1vw; */
+    font-size: 1.5vh;
+}
+
+.comments {
+    margin-left: 1vw;
+}
+
+.accountName {
+    margin-left: 0.6vw;
+}
+
+.creator {
+    /* display: inline-block; */
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.profile {
+    height: 2vh;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+    width: 2vh;
+    background-color: rgb(136, 6, 6);
+    border-radius: 50%;
+    display: flex;
+  }
+
+.submitCommentContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.typeComment {
+    color: #fff;
+    padding: 1vh 1vw;
+    width: 80%;
+    background-color: #000;
+    border-radius: 2vw;
+}
+
+.submitCommentBtn {
+
+}
+
+.noCommentsHeader {
+    margin-top: 50%;
+    text-align: center;
+}

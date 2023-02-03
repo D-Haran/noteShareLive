@@ -1,0 +1,150 @@
+
+.container {
+    width: 100%;
+    height: max-content;
+    padding-top: 19vh;
+    margin-bottom: 5vh;
+    /* margin: 0 15vh auto; */
+    font-size: 2.5vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-bottom: 0.4vh solid #FC7753;
+    filter: drop-shadow(0px 4px 2px #000);
+}
+
+.noLibraries {
+    text-align: center;
+    width: 100vw;
+    font-size: 5.5vh;
+    height: max-content;
+    padding-top: 25vh;
+    background: url("/static/mesh-gradient.png");
+    color: #fff;
+    border-bottom: 0.8vh solid #FC7753;
+    filter: drop-shadow(0px 1px 2px #000);
+}
+
+.createLibWrapper {
+    display: grid;
+    border-radius: 4vh;
+    grid-template-columns: 1fr 2fr;
+    width: 17vw;
+    height: fit-content;
+    font-size: 1.8vh;
+    font-weight: 50;
+    color: rgb(0, 0, 0);
+    /* justify-content: center; */
+    margin: 0 auto;
+    background-color: #e4d1d1;
+    z-index: 39;
+    filter: drop-shadow(1px 2px 1px #FC7753);
+    cursor: pointer;
+}
+
+.addLibrary {
+    display: flex;
+    width: 6vh;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-weight: 300;
+    margin-right: 2vw;
+    height: 6vh;
+    justify-content: center;
+    border: #FC7753;
+    border-radius: 50%;
+    filter: drop-shadow(1px 4px 2px #FC7753);
+    color: #FC7753;
+    background-color: #FCE7E7;
+}
+.addLibraryIcon {
+    
+}
+
+.createLibrary {
+    font-weight: 300;
+    height: fit-content;
+} 
+
+.background {
+    background-color: #000;
+}
+
+
+
+.trending {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 1.8vh;
+    margin: auto;
+    color: #fff;
+    z-index: 100;
+}
+
+
+.slide {
+    transform: scale(1.7);
+    justify-content: center;
+    transition: transform 900ms;
+    opacity: 0.5;    
+}
+
+.activeSlide {
+    justify-content: center;
+}
+
+.noLibraries {
+
+}
+
+
+.arrowNextWrapper {
+    position: absolute;
+    padding: 1.6vh 1vw;
+    border-radius: 50%;
+    background-color: #6D6767;
+    right: 10%;
+    top: 13.6vh;
+    cursor: pointer;
+    z-index: 100;
+}
+.arrowBackWrapper {
+    position: absolute;
+    padding: 1.6vh 1vw;
+    border-radius: 50%;
+    background-color: #6D6767;
+    left: 10%;
+    top: 13.6vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrow {
+    transition: color 300ms;
+}
+.next {
+    right: 0%;
+    top: 50%
+}
+
+.prev {
+    left: 0%;
+    top: 50%;
+}
+
+/* .headerContainer {
+    display: flex;
+    border-radius: 4vh;
+    width: 17vw;
+    height: 6vh;
+    font-size: 1.2vh;
+    font-weight: 50;
+    color: #fff;
+    justify-content: center;
+    margin: auto;
+    background: #6D6767;
+    z-index: 39;
+    filter: drop-shadow(1px 2px 1px #FC7753);
+}*/
+

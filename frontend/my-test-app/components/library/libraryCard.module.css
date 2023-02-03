@@ -1,0 +1,151 @@
+.container {
+    margin-top: 5vh;
+    padding: 2vh 1vw;
+    font-size: 2vh;
+    z-index: 10;
+}
+
+.booksContainer {
+    border-radius: 1.5vw;
+    width: min-content;
+    height: 100%;
+    padding: 1vh 2vw;
+    padding-bottom:15vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.bookName {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.extraOptions {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    height: min-content;
+    /* background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+.options {
+    position: absolute;
+    text-align: left;
+    font-size: 1vw;
+    right: 0;
+    top: 9vh;
+    padding: 0 2.5vh;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.option:hover {
+    color: #FC7753;
+}
+
+.formHeader {
+    margin-top: 13vh;
+    margin-bottom: 7vh;
+    text-align: center;
+}
+
+.editInput {
+    color: #000;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 4px #FC7753);
+    text-align: center;
+    border: none;
+    border-radius: 3vw;
+}
+.editDescriptionInput {
+    color: #000;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 4px #FC7753);
+    text-align: center;
+    resize: vertical;
+    border: none;
+}
+
+.editForm {
+    text-align: center;
+    color: #000;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    margin: auto;
+}
+
+.bookThumbnail {
+    height: 40vh;
+    width: 30vh;
+    background-repeat: no-repeat;
+    border-radius: 0.4vw;
+}
+
+.editLabels {
+    color: #000;
+    display: grid;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+.detailsWrapper {
+    width: 50%;
+    height: max-content;
+    margin: auto;
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2vh;    
+    color: #000;
+}
+
+.detailNums {
+    height: max-content;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1vh 0.5vh;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Vote1 {
+    position: absolute;
+    right: 2vw;
+    width: 6vh;
+    text-align: center;
+
+}
+.Vote2 {
+    position: absolute;
+    width: 6vh;
+    left: 2vw;
+}
+
+.Vote {
+    position: static;
+}
